@@ -198,7 +198,7 @@ h1,h2,h3,h4,h5,h6,ul,p{
     font-family: 'OpenSans-Bold';
     text-align: center;
     text-transform: uppercase;
-    color: #FB3C6C;
+    color: var(--orange);
     font-size: 38px;
 }
 .people_section{
@@ -520,7 +520,280 @@ h1,h2,h3,h4,h5,h6,ul,p{
     justify-content: space-between;
     width: 100%;
 }
-/******************************* index_fifth_section_css *******************************/
+/******************************* end_index_fifth_section_css *******************************/
+
+/******************************* index_sixth_section_css *******************************/
+.index_sixth_section{
+    margin-top: 80px;
+}
+.index_sixth_section h3{
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+/******************************* end_index_sixth_section_css *******************************/
+
+
+/******************************* index_seventh_section_css *******************************/
+
+.index_inner_seventh_content{
+    background-color: #f8f8f8;
+}
+.index_seventh_title h3{
+    font-family: 'OpenSans-ExtraBold';
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.index_inner_seventh_content .owl-carousel .item img{
+    width: auto !important;
+}
+/******************************* index_seventh_section_css *******************************/
+
+/******************************* index_eighth_section_css *******************************/
+.index_eighth_section .index_third_right_section{
+    text-align: center;
+}
+.index_eighth_section .index_third_right_section p{
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+.top_countries_section{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.top_countries_box img{
+    width: 100%;
+    border-radius: 30px;
+}
+.top_countries_box{
+    position: relative;
+    cursor: pointer;
+}
+.top_countries_box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: all .5s;
+}
+.top_countries_box:hover::after{
+    background-color: #00000099;
+}
+.top_countries_box_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    transition: all .5s;
+    opacity: 0;
+}
+.top_countries_box:hover .top_countries_box_content{
+    opacity: 1;
+}
+
+.top_countries_box_content h4{
+    font-family: 'OpenSans-Bold';
+    color: var(--white);
+    font-size: 20px;
+}
+.top_countries_box_content p{
+    font-family: 'OpenSans-Bold';
+    color: var(--white);
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+/******************************* index_eighth_section_css *******************************/
+
+/******************************* index_ninth_section_css *******************************/
+.index_ninth_section{
+    background-color: #f8f8f8;
+}
+.index_ninth_section .index_third_right_section{
+    text-align: center;
+}
+.index_ninth_section .index_third_right_section p{
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+.index_ninth_team_img .team_img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.index_ninth_inner_section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+}
+.index_ninth_box{
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+.index_team_name h4{
+    background-color: var(--orange);
+    color: var(--white);
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    font-size: 20px;
+}
+.index_team_name h4 a{
+    text-decoration: none;
+    color: var(--white);
+}
+.index_ninth_team_img{
+    position: relative;
+}
+.team_social_icons{
+    padding: 40px;
+}
+.team_social_icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--black);
+    border-radius: 100%;
+    margin: 0 10px 0 0;
+    transition: all .5s;
+}
+.team_social_icons a img{
+    width: 15px;
+    filter: invert(100%);
+}
+.team_social_icons a:hover{
+    background-color: #b4260f;
+    border: 1px solid #b4260f;
+    transform: scale(1.2);
+}
+.team_social_icons a:hover img{
+    filter: invert(0%);
+}
+/******************************* index_ninth_section_css *******************************/
+
+/******************************* index_tenth_section_css *******************************/
+.index_tenth_section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    position: relative;
+    z-index: 10;
+}
+.index_tenth_section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/map.png");
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+.index_tenth_section .index_third_right_section h5{
+    color: var(--white);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0;
+}
+.index_tenth_section .index_third_right_section p{
+    color: var(--white);
+}
+.inline_div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.inline_div p{
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    padding: 0 !important;
+}
+.inline_div a{
+    background-color: var(--white);
+    color: var(--black);
+    transition: all .5s;
+}
+.inline_div a:hover{
+    background-color: #b4260f;
+    color: var(--white);
+}
+.client_review_section{
+    margin-top: 80px;
+}
+.client_review_box{
+    padding: 40px 30px;
+    border-radius: 30px;
+    background-color: #111111;
+    position: relative;
+}
+
+.client_review_section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 50px;
+}
+.client_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+.client_img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 6px solid #292929;
+}
+.client_text p{
+    color: var(--white);
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF57;
+}
+.client_name{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.client_name h4{
+    color: var(--white);
+    margin: 0;
+    font-size: 18px;
+}
+.client_social_links a img{
+    width: 18px;
+    margin: 0 4px;
+}
+/******************************* index_tenth_section_css *******************************/
 
 
 /******************************* responsive *******************************/
@@ -588,6 +861,32 @@ h1,h2,h3,h4,h5,h6,ul,p{
     }
     .index_fourth_section {
         padding: 80px 0 180px !important;
+    }
+    .index_sixth_section{
+        margin-top: 60px;
+    }
+    .index_seventh_title h3{
+        font-size: 44px;
+    }
+    .top_countries_section{
+        gap: 20px;
+    }
+    .top_countries_box img{
+        border-radius: 20px;
+    }
+    .top_countries_box::after{
+        border-radius: 20px;
+    }
+    .index_ninth_inner_section{
+        column-gap: 20px;
+    }
+    .team_social_icons{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .inline_div{
+        margin-top: 20px;
     }
 }
 @media (max-width: 991.98px){
@@ -724,6 +1023,47 @@ h1,h2,h3,h4,h5,h6,ul,p{
         border-top: 1px solid #FFFFFF57;
         padding-top: 30px;
     }
+    .index_sixth_section {
+        margin-top: 30px;
+    }
+    .index_seventh_title h3 {
+        font-size: 36px;
+    }
+    .top_countries_section {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .index_ninth_inner_section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .index_ninth_inner_section{
+        row-gap: 20px;
+    }
+    .inline_div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .index_tenth_section .index_third_right_section h5{
+        max-width: 100%;
+    }
+    .index_tenth_section .about_text{
+        text-align: center;
+    }
+    .inline_div p{
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .inline_div .sign_up_btn{
+        margin: auto;
+    }
+    .client_review_section{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+    .client_review_section {
+        margin-top: 60px;
+    }
 }
 @media (max-width: 575.98px){
     .header_section {
@@ -797,7 +1137,22 @@ h1,h2,h3,h4,h5,h6,ul,p{
         font-size: 16px;
     }
     .index_fourth_section {
-        padding: 80px 0 130px !important;
+        padding: 32px 0 130px !important;
+    }
+    .index_sixth_section h3{
+        text-align: center;
+    }
+    .index_seventh_title h3 {
+        font-size: 28px;
+    }
+    .top_countries_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .index_ninth_inner_section{
+        gap: 10px;
+    }
+    .client_review_section{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (max-width: 425.98px){
@@ -836,6 +1191,18 @@ h1,h2,h3,h4,h5,h6,ul,p{
     }
     .index_fourth_inner_section h5 {
         font-size: 26px;
+    }
+    .index_seventh_title h3 {
+        font-size: 26px;
+    }
+     .top_countries_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .index_eighth_section .index_third_right_section{
+        margin-top: 0;
+    }
+    .index_ninth_inner_section{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 /******************************* end_responsive_css *******************************/
