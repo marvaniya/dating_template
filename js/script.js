@@ -38,3 +38,6 @@ $(window).on('scroll', function () {
         counted = true; 
     }
 });
+
+
+
