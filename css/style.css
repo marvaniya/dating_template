@@ -1176,6 +1176,126 @@ h1,h2,h3,h4,h5,h6,ul,p{
 }
 /******************************* about_css *******************************/
 
+/******************************* contact_css *******************************/
+.contact_info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+.contact_info_box{
+    border-radius: 30px;
+    padding: 25px;
+    background-color: var(--white);
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.25);
+    
+}
+.contact_info_top_box{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+.contact_info_top_box img{
+    width: 40px;
+}
+.contact_details h4{
+    font-family: 'OpenSans-Bold';
+    color: #1d274e;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.contact_details h3{
+    font-family: 'OpenSans-Bold';
+    font-size: 18px;
+    color: var(--orange);
+    margin: 0;
+}
+.contact_info_box p{
+    color: #747da1;
+    margin: 0;
+    padding-top: 14px;
+}
+.number{
+    padding-top: 14px;
+}
+.number a{
+    color: #747da1;
+    display: inline-block;
+    border-bottom: 1px solid var(--orange);
+    text-decoration: none;
+}
+.reach_out_orange_box{
+    background-color: var(--orange);
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.05);
+    padding: 40px 30px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.suport_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+.suport_icon img{
+    width: 50px;
+}
+.suport_text h4{
+    font-family: 'OpenSans-Bold';
+    color: var(--white);
+    margin-top: 20px;
+    font-size: 20px;
+}
+.suport_text p{
+    color: var(--white);
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+}
+.suport_text a{
+    font-family: 'OpenSans-Regular';
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all .5s;
+}
+.suport_text a:hover{
+    color: var(--white);
+    background-color: #b4260f;
+}
+.single_girl{
+    margin-left: -50px;
+}
+.single_girl img{
+    width: 100%;
+    max-width: 300px;
+}
+.reach_out_left_section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.reach_out_inner_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reach_out_left_section{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+/******************************* contact_css *******************************/
+
 
 /******************************* responsive *******************************/
 @media (max-width: 1399.98px){
@@ -1544,6 +1664,33 @@ h1,h2,h3,h4,h5,h6,ul,p{
         width: 100% !important;
         height: 100% !important;
     }
+    .contact_info{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+    .reach_out_inner_section{
+        flex-direction: column;
+    }
+    .reach_out_right_section{
+        order: -1;
+    }
+    .reach_out_right_section .index_third_right_section{
+        text-align: center;
+    }
+    .reach_out_left_section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .single_girl{
+        order: -1;
+        margin: auto;
+    }
+    .reach_out_orange_box{
+        width: 100%;
+    }
+    .suport_text p{
+        max-width: 100%;
+    }
 }
 @media (max-width: 575.98px){
     .header_section {
@@ -1664,6 +1811,18 @@ h1,h2,h3,h4,h5,h6,ul,p{
     .about_third_box_content h4{
         font-size: 18px;
     }
+     .contact_info{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .contact_info_box{
+        padding: 12px;
+        border-radius: 20px;
+    }
+    .contact_info_top_box img{
+        width: 30px;
+    }
 }
 @media (max-width: 425.98px){
     .hero_content {
@@ -1716,6 +1875,9 @@ h1,h2,h3,h4,h5,h6,ul,p{
     }
     .question_box h3 {
         font-size: 18px;
+    }
+     .contact_info{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 /******************************* end_responsive_css *******************************/
