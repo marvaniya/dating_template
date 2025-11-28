@@ -68,6 +68,9 @@ h1,h2,h3,h4,h5,h6,ul,p{
     margin: 0;
     text-decoration: none;
 }
+.logo img{
+    width: 300px;
+}
 .header_menu ul{
     padding: 0;
     margin: 0;
@@ -1449,6 +1452,39 @@ h1,h2,h3,h4,h5,h6,ul,p{
     top: 20px;
     left: 15px;
 }
+.blog_two h1{
+    width: 100%;
+    max-width: 900px;
+}
+.user_auth_btn{
+    margin-top: 20px;
+}
+.user_auth_btn a{
+    font-family: 'OpenSans-Bold';
+    display: inline-block;
+    padding: 12px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 0 10px 0 0;
+}
+.user_auth_btn a:first-child{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.user_auth_btn a:last-child{
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.map_two_img{
+    text-align: right;
+}
+.map_two_img img{
+    border-radius: 30px;
+    width: 80%;
+}
+.blog_two h1{
+    font-size: 48px;
+}
 /******************************* blog_css *******************************/
 
 
@@ -1878,6 +1914,10 @@ h1,h2,h3,h4,h5,h6,ul,p{
     .blog_second_section{
         padding: 20px 0 0;
     }
+    .map_two_img{
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 @media (max-width: 575.98px){
     .header_section {
@@ -2019,6 +2059,12 @@ h1,h2,h3,h4,h5,h6,ul,p{
     }
     .blog_second_section{
         padding: 10px 0 0;
+    }
+    .user_auth_btn a{
+        padding: 8px 30px;
+    }
+    .header_content .logo img {
+        width: 250px;
     }
 }
 @media (max-width: 425.98px){
