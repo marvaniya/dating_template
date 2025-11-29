@@ -1468,8 +1468,8 @@ h1,h2,h3,h4,h5,h6,ul,p{
     margin: 0 10px 0 0;
 }
 .user_auth_btn a:first-child{
-    background-color: var(--orange);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--orange);
 }
 .user_auth_btn a:last-child{
     color: var(--white);
@@ -1665,7 +1665,9 @@ h1,h2,h3,h4,h5,h6,ul,p{
     margin-bottom: 10px;
 }
 .blog_two_bg{
-    background: linear-gradient(135deg, #e91e63, #9c27b0);
+    /* background: linear-gradient(135deg, #e91e63, #9c27b0); */
+    background-color: var(--orange);
+    background-image: none;
     position: relative;
 }
 .blog_two_bg::after{
@@ -1688,7 +1690,8 @@ h1,h2,h3,h4,h5,h6,ul,p{
 }
 .blog_two_box h3{
     font-family: 'OpenSans-ExtraBold';
-    color: #e91e63;
+    /* color: #e91e63; */
+    color: var(--orange);
     font-size: 38px;
     margin-bottom: 15px;
 }
@@ -1807,14 +1810,16 @@ ease;
 }
 .country-link {
     display: inline-block;
-    background: #e91e63;
+    /* background: #e91e63; */
+    background-color: var(--orange);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 25px;
     transition: background 0.3s ease;
     margin-top: auto;
-    border: 2px solid #e91e63;
+    /* border: 2px solid #e91e63; */
+    border: 2px solid var(--orange);
 }
 .country-link:hover {
     background: #c2185b;
@@ -1855,7 +1860,8 @@ ease;
     margin: 0 0 20px 0;
 }
 .test_img_content h6{
-    color: #e91e63;
+    /* color: #e91e63; */
+    color: var(--orange);
     font-weight: bold;
     font-style: normal;
 }
@@ -1870,7 +1876,8 @@ ease;
     padding: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    border-top: 4px solid #e91e63;
+    /* border-top: 4px solid #e91e63; */
+    border-top: 4px solid var(--orange);
     cursor: pointer;
 }
 .blog_two_fifth_box:hover{
@@ -1924,7 +1931,8 @@ ease;
     margin: 0;
 }
 .blog_two_last_section{
-    background: linear-gradient(135deg, #e91e63, #9c27b0);
+    /* background: linear-gradient(135deg, #e91e63, #9c27b0); */
+    background-color: var(--orange);
 }
 .blog_two_last_section h3{
     color: var(--white);
@@ -1937,10 +1945,13 @@ ease;
     margin-right: auto;
     color: var(--white);
 }
+.white_logo{
+    filter: invert(0%) !important;
+}
 .cta-button {
     display: inline-block;
-    background: #ff5722;
-    color: white;
+    background: var(--white);
+    color: var(--orange);
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 50px;
