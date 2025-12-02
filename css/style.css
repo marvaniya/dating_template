@@ -836,8 +836,8 @@ h1,h2,h3,h4,h5,h6,ul,p{
     margin-top: 50px;
 }
 .question_box h3{
-    font-family: 'OpenSans-ExtraBold';
-    font-size: 45px;
+    font-family: 'OpenSans-SemiBold';
+    font-size: 36px;
 }
 .question_box p{
     font-size: 18px;
@@ -845,6 +845,16 @@ h1,h2,h3,h4,h5,h6,ul,p{
 .question_box ul li{
     font-size: 18px;
     margin-bottom: 10px;
+}
+.blog_inner_sub_div_content .blog_inner_sub_div_left_content .blog_two_sixth_inner_section_box{
+    box-shadow: none;
+    padding: 0;
+}
+.blog_inner_sub_div_content .blog_inner_sub_div_left_content .blog_two_sixth_inner_section_box:hover{
+    transform: none
+}
+.blog_inner_sub_div_content .blog_inner_sub_div_left_content .blog_two_sixth_inner_section_box h3{
+    font-size: 1.8rem;
 }
 /******************************* index_eleventh_section_css *******************************/
 
