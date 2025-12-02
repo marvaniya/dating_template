@@ -843,6 +843,12 @@ h1,h2,h3,h4,h5,h6,ul,p{
     font-family: 'OpenSans-SemiBold';
     font-size: 42px;
 }
+.question_box h4{
+    font-size: 26px;
+}
+.question_box h5{
+    font-size: 22px;
+}
 .question_box p{
     font-size: 18px;
 }
