@@ -2634,7 +2634,7 @@ ease;
         padding: 8px 30px;
     }
     .header_content .logo img {
-        width: 250px;
+        width: 200px;
     }
     .blog_inner_sub_div_left_content_box{
         margin-bottom: 20px;
@@ -2734,13 +2734,28 @@ ease;
         font-size: 18px;
     }
     .question_box h2{
-        font-size: 38px;
+        font-size: 28px;
     }
      .contact_info{
         grid-template-columns: repeat(1, 1fr);
     }
     .profile {
         margin: 15px 0 10px;
+    }
+}
+@media (max-width: 380.98px){
+    .header_content .logo img {
+        width: 160px;
+    }
+    .sign_up_btn a {
+        padding: 8px 4px;
+        font-size: 12px;
+    }
+    .question_box h2 {
+        font-size: 20px;
+    }
+    .question_box h4 {
+        font-size: 18px;
     }
 }
 /******************************* end_responsive_css *******************************/
